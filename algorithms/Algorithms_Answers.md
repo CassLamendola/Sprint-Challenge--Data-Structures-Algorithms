@@ -26,7 +26,7 @@ def biggest_diff(a):
     return max([a[j] - min(a[:j]), max(a[i+1:]) - a[i]])
 ```
 
-    b) If I'm understanding right, f is not a pre-determined value, but a value chosen to minimize the number of broken eggs (says "dropped", but I assume it means "broken"). So if it can be arbitrarily chosen, it should be set to equal n (the number of stories). Then an egg will only be broken if it's dropped from the top floor (assuming f can't be greater than n, otherwise set f to n+1). Is this a trick question?
+    b) Start by dropping an egg from the middle floor `math.floor(n/2)`, then if the egg doesn't break, check the floor halfway between the current floor and the top. If it breaks, check the floor halfway between the current floor and the ground. Stop when, on two floors that are consecutive, the egg breaks dropped from one and doesn't break when dropped from the other. `f` equals the floor from which the egg dropped in that last step.
 
 Exercise III.
 
