@@ -6,9 +6,9 @@ Exercise I.
 
     b) O(n)
 
-    c) O(64 * sqrt(n)/2) => O(sqrt(n)/2) => O(n) or O(log n) or O(sqrt(n))?
+    c) O(64 * sqrt(n)/2) => O(sqrt(n))
 
-    d) O(n * sqrt(n)) => O(n) or O(n^2)? - [depends on whether or not sqrt(n) evaluates to (n)]
+    d) O(n * sqrt(n))
 
     e) O(10n^3) => O(n^3)
 
